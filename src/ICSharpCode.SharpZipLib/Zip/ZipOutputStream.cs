@@ -551,10 +551,10 @@ namespace ICSharpCode.SharpZipLib.Zip
 				{
 					curEntry.Crc = crc.Value;
 				}
-				else if (curEntry.Crc != crc.Value)
-				{
-					throw new ZipException($"crc was {crc.Value}, but {curEntry.Crc} was expected");
-				}
+				//else if (curEntry.Crc != crc.Value)
+				//{
+				//	throw new ZipException($"crc was {crc.Value}, but {curEntry.Crc} was expected");
+				//}
 			}
 
 			if (curEntry.Size < 0)
